@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Slab:wght@200;400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #79AC78;
+    color: #D0E7D2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+    && h1 {
+        font-weight: 700;
+    }
+
+    && a {
+        text-decoration: none;
+        margin: 0.5rem;
+        color: #D0E7D2;
+        font-weight: 200;
+        font-size: 1.4rem;
+    }
+
+    && a:hover {
+        color: #ffffff;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 200;
+    background-color: #79AC78;
+    color: #D0E7D2;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+
+    && a {
+        text-decoration: none;
+        color: #D0E7D2;
+    }
+
+    && a:hover {
+        color: #ffffff;
+    }
+}
