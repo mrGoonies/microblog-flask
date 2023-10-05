@@ -15,7 +15,10 @@ header {
     padding: 1rem;
 
     && h1 {
-        font-weight: 700;
+        && a {
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
     }
 
     && a {
@@ -52,4 +55,90 @@ footer {
     && a:hover {
         color: #ffffff;
     }
+}
+
+.home-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    && .home-main__form {
+        && .mb-3 {
+            && .form-label {
+                font-size: 2.5rem;
+                margin-top: 1rem;
+                text-align: center;
+            }
+        }
+
+        && .btn {
+            background-color: #79AC78;
+            color: #ffffff;
+        }
+
+        && .btn:hover {
+            color: #D0E7D2;
+        }
+    }
+}
+
+.recent-main {
+
+    && .recent-main__posts__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        && h3 {
+            font-weight: 700;
+        }
+
+        && p {
+            font-weight: 200;
+
+        }
+    }
+}
+
+.recent-main {
+    && section {
+
+        && h2 {
+            text-align: left;
+            margin: 2rem;
+            font-weight: 700;
+        }
+
+        && .recent-main__header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            && h3 {
+                font-size: 1.8rem;
+            }
+
+            && p {
+                font-weight: 200;
+                font-style: italic;
+                margin: 0.5rem;
+            }
+
+            && p::before {
+                content: "· ";
+            }
+        }
+
+        && p {
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        & hr {
+            width: 80%;
+            margin: 1rem auto;
+        }
+    }
+
+
 }
