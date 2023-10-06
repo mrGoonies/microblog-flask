@@ -14,10 +14,10 @@
 
 <body>
     <header>
-        <h1><a class="header-title" href="{{ url_for('home') }}">Micro Blog</a></h1>
+        <h1>Micro Blog</h1>
         <nav>
+            <a href="{{ url_for('home') }}">Create Post</a>
             <a href="{{ url_for('post') }}">Recent</a>
-            <a href="#">Calendar</a>
         </nav>
     </header>
     {% block content%}

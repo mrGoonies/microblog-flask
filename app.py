@@ -12,23 +12,19 @@ def home():
     title = "Home"
 
     if request.method == "POST":
-        date_post = datetime.date.today()
-        entries.append(
-            {
-                "entry_title": request.form.get("title"),
-                "entry_content": request.form.get("content"),
-                "date_post": date_post,
-            }
-        )
-
+        entry_title = request.form.get("title")
+        date_post = datetime.date.today().strftime("%Y-%m-%d")
+        entry_content = request.form.get("content")
+        entries.append((entry_title, date_post, entry_content))
     print(entries)
+
     return render_template("home/home.html", title=title, year=current_year)
 
 
 @app.get("/post")
 def post():
     title = "posts"
-    return render_template("home/recent.html", title=title, recent=entries)
+    return render_template("home/recent.html", title=title, entries=entries)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content%}
+<main class="recent-main">
+    <section>
+    <h2>Recent Post</h2>
+        {% for entry in entries%}
+            <div class="recent-main__header">
+                <h3>{{ entry[0] }}</h3>
+                <p>{{ entry[1] }}</p>
+            </div>
+            <p>{{ entry[2] }}</p>
+            <hr />
+        {% endfor %}
+    </section>
+</main>
+{% endblock %}
