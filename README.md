@@ -26,4 +26,4 @@ python app.py
 ```
 5. Abrir el navegador y entrar al localhost:5000
 
-Si deseas revisar el proyecto en producción, puedes entrar a [microblog-flask](https://microblog-flask.herokuapp.com/)
+Si deseas revisar el proyecto en producción, puedes entrar a [microblog-flask](https://microblog-54y3.onrender.com/)
