@@ -24,6 +24,22 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-5. Abrir el navegador y entrar al localhost:5000
 
-Si deseas revisar el proyecto en producción, puedes entrar a [microblog-flask](https://microblog-54y3.onrender.com/)
+5. Crear una instancia en mongoDB Atlas y agregar las credenciales en el archivo .env
+
+6. Estructura del BSON
+```json
+{
+    _id: ObjectId("id"),
+    "title": "Título del post",
+    "date": "Fecha de publicación",
+    "content": "Contenido del post",
+}
+```
+7. Abrir el navegador y entrar al localhost:5000
+
+Si deseas revisar el proyecto en producción (Render), puedes entrar a [microblog-flask](https://microblog-54y3.onrender.com/).
+
+## Futuras mejoras
+- [ ] Responsive Design.
+- [ ] Generar un toasty cuando se crea un post.
